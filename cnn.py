@@ -41,6 +41,7 @@ at the input layer. Hence tried 128. This can be changed for trial and error.
 classifier.add(Dense(output_dim=128,activation='relu'))
 classifier.add(Dense(output_dim=1,activation='sigmoid'))
 
+#optimizer has the responsibility of updating thw weights to minimize the loss function
 classifier.compile(optimizer='adam',loss='binary_crossentropy',metrics=['accuracy'])
 
 '''
